@@ -41,7 +41,7 @@ return [
     |
     */
 
-    'url' => 'http://localhost',
+    'url' => 'http://octobermovies.dev',
 
     /*
     |--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return [
     |
     */
 
-    'key' => 'base64:QP98gxWbgn92KX5c5f/Hn52X2s0Zd9uQFe2Q8911ZzQ=',
+    'key' => 'c9dIzmnyrmnkfbCkivkUJQewVyJe5bT7',
 
     'cipher' => 'AES-256-CBC',
 

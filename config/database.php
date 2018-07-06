@@ -55,8 +55,8 @@ return [
         'mysql' => [
             'driver'    => 'mysql',
             'host'      => 'localhost',
-            'port'      => 3306,
-            'database'  => 'database',
+            'port'      => '3306',
+            'database'  => 'dbmovies',
             'username'  => 'root',
             'password'  => '',
             'charset'   => 'utf8mb4',
