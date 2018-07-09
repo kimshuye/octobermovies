@@ -32,7 +32,7 @@ notFoundMessage = "Record not found"
     <ul class="gallery clearfix" >
     {% for image in record.movie_gallery %}
         <li style="display: inline;">
-            <a href="{{ image.path}}">
+            <a href="{{ image.path}}" target="_blank">
                 <img src="{{ image.thumb(80,80, {'mode':'crop'}) }}">
             </a>
         </li>  
