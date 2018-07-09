@@ -4,3 +4,8 @@ plugin:
     author: watchlearn
     icon: oc-icon-video-camera
     homepage: ''
+navigation:
+    main-menu-item:
+        label: Movies
+        url: /
+        icon: icon-video-camera
