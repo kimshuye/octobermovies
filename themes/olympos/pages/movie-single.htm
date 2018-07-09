@@ -1,5 +1,5 @@
 title = "Movie single"
-url = "/movie/movie/:slug"
+url = "/movies/movie/:slug"
 layout = "default"
 is_hidden = 0
 
@@ -42,7 +42,7 @@ notFoundMessage = "Record not found"
     <h3>Genres</h3>
 
     {% for genre in record.genres %}
-        {{ genre.genre_title }}<br>
+        <a href="../../genres/{{genre.slug}}">{{ genre.genre_title }}</a><br>
     {% endfor %}
 
 
