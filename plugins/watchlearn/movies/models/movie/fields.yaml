@@ -26,10 +26,6 @@ fields:
             extension: auto
         span: auto
         type: fileupload
-    year:
-        label: Year
-        span: auto
-        type: text
     movie_gallery:
         label: 'Movie Gallery'
         mode: image
@@ -41,3 +37,13 @@ fields:
             extension: auto
         span: auto
         type: fileupload
+    genres:
+        label: Genres
+        span: auto
+        nameFrom: genre_title
+        descriptionFrom: description
+        type: relation
+    year:
+        label: Year
+        span: left
+        type: text
