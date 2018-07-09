@@ -7,5 +7,5 @@ plugin:
 navigation:
     main-menu-item:
         label: Movies
-        url: /
+        url: watchlearn/movies/movies
         icon: icon-video-camera
