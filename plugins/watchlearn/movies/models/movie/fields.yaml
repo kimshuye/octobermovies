@@ -1,21 +1,43 @@
 fields:
     name:
         label: 'Movie Titile'
-        span: full
+        span: left
+        type: text
+    slug:
+        label: Slug
+        span: right
+        preset:
+            field: name
+            type: slug
         type: text
     description:
         label: Description
         size: ''
         span: full
         type: richeditor
+    poster:
+        label: 'Movie Poster'
+        mode: image
+        imageWidth: '100'
+        imageHeight: '100'
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
     year:
         label: Year
         span: auto
         type: text
-    slug:
-        label: Slug
+    movie_gallery:
+        label: 'Movie Gallery'
+        mode: image
+        imageWidth: '80'
+        imageHeight: '80'
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
         span: auto
-        preset:
-            field: name
-            type: slug
-        type: text
+        type: fileupload
