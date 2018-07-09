@@ -17,6 +17,11 @@
         <!-- <testsuite name="October Rain Test Suite">
             <directory>./vendor/october/rain/tests</directory>
         </testsuite> -->
+
+        <!-- <testsuite name="Acme Blog Plugins">
+            <directory>./plugins/acme/tests</directory>
+        </testsuite> -->
+
         <!-- <testsuite name="">
             <directory></directory>
         </testsuite> -->
