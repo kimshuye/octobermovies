@@ -1,0 +1,29 @@
+{
+  "name": "octobermovies",
+  "version": "1.0.0",
+  "description": "Laravel Elixir",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimshuye/octobermovies.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kimshuye/octobermovies/issues"
+  },
+  "homepage": "https://github.com/kimshuye/octobermovies#readme",
+  "devDependencies": {
+    "laravel-elixir": "^6.0.0-18",
+    "laravel-elixir-livereload": "^1.1.6"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
+}
