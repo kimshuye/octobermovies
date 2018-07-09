@@ -6,7 +6,6 @@ noRecordsMessage: 'backend::lang.list.no_records'
 recordsPerPage: 20
 showSetup: true
 showCheckboxes: true
-showSorting: 0
 toolbar:
     buttons: list_toolbar
     search:
