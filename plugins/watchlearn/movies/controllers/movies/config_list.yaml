@@ -1,12 +1,13 @@
-list: $/watchlearn/movies/models/movie/columns.yaml
-modelClass: Watchlearn\Movies\Models\Movie
 title: Movies
+modelClass: Watchlearn\Movies\Models\Movie
+list: $/watchlearn/movies/models/movie/columns.yaml
+recordUrl: 'watchlearn/movies/movies/update/:id'
 noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
 showSetup: true
 showCheckboxes: true
-recordsPerPage: 20
+showSorting: 0
 toolbar:
     buttons: list_toolbar
     search:
         prompt: 'backend::lang.list.search_prompt'
-recordUrl: 'watchlearn/movies/movies/update/:id'
