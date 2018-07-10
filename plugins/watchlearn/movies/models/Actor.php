@@ -21,6 +21,18 @@ class Actor extends Model
     public $rules = [
     ];
 
+    public $belongsToMany =[
+        'movies' =>[
+            'Watchlearn\Movies\Models\Movie',
+            'table' => 'watchlearn_movies_actors_movies',
+            'order' => 'first_name'
+        ]
+    ];
+
+    public function getFullNameAttribute(){
+        return $this->first_name . " " . $this->last_name;
+    }
+
     /**
      * @var string The database table used by the model.
      */
