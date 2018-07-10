@@ -23,12 +23,32 @@ class ActorBox extends FormWidgetBase
     public function prepareVars(){
         $this->vars['id'] = $this->model->id;
         $this->vars['actors'] = Actor::all()->lists('full_name', 'id');
-        $this->vars['first_name'] = $this->formField->getName().'[]';
+        $this->vars['full_name'] = $this->formField->getName().'[]';
         if(!empty($this->getLoadValue())){
             $this->vars['selectedValues'] = $this->getLoadValue();
         } else {
             $this->vars['selectedValues'] = [];
         }
+    }
+
+    public function getSaveValue($actors){
+        $newArray = [];
+
+        foreach($actors as $actorID){
+            if(!is_numeric($actorID)){
+                $newActor = new Actor;
+                $Fullname = explode(' ', $actorID);
+                
+                $newActor->first_name = $Fullname[0];
+                $newActor->last_name = $Fullname[1];
+                $newActor->save();
+                $newArray[] = $newActor->id;
+            } else {
+                $newArray[] = $actorID;
+            }
+        }
+
+        return $newArray;
     }
 
     public function loadAssets()
