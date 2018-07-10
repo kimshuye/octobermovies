@@ -11,16 +11,16 @@
          syntaxCheck="false"
 >
     <testsuites>
-        <testsuite name="October CMS Test Suite">
+        <!-- <testsuite name="October CMS Test Suite">
             <directory>./tests/unit</directory>
-        </testsuite>
+        </testsuite> -->
         <!-- <testsuite name="October Rain Test Suite">
             <directory>./vendor/october/rain/tests</directory>
         </testsuite> -->
 
-        <!-- <testsuite name="Acme Blog Plugins">
-            <directory>./plugins/acme/tests</directory>
-        </testsuite> -->
+        <testsuite name="Acme Blog Plugins">
+            <directory>./plugins/acme/blog/tests</directory>
+        </testsuite>
 
         <!-- <testsuite name="">
             <directory></directory>
