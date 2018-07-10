@@ -27,15 +27,15 @@ class Actors extends ComponentBase
                 'title' => 'Sort Actors',
                 'description' => 'Sort those actors',
                 'type' => 'dropdown',
-                'default' => 'name asc'
+                'default' => 'first_name asc'
             ]
         ];
     }
 
     public function getSortOrderOptions(){
         return [
-            'name asc' => 'Name (ascending)',
-            'name desc' => 'Name (descending)'
+            'first_name asc' => 'Name (ascending)',
+            'first_name desc' => 'Name (descending)'
         ];
     }
 
@@ -46,12 +46,12 @@ class Actors extends ComponentBase
     protected function loadActors(){
         $query = Actor::all();
 
-        if($this->property('sortOrder') == 'name asc'){
-            $query = $query->sortBy('name');
+        if($this->property('sortOrder') == 'first_name asc'){
+            $query = $query->sortBy('first_name');
         }
 
-        if($this->property('sortOrder') == 'name desc'){
-            $query = $query->sortByDesc('name');
+        if($this->property('sortOrder') == 'first_name desc'){
+            $query = $query->sortByDesc('first_name');
         }
 
         if($this->property('results') > 0){
