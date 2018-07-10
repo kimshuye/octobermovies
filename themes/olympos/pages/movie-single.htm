@@ -39,6 +39,24 @@ notFoundMessage = "Record not found"
     {% endfor %}
     </ul>
 
+    <h3>Actors</h3>
+
+    {% for actor in record.actors %}
+        {{ actor.actor_name }}
+        {{ actor.actor_age }}
+    {% endfor %}
+    <h3>Gallery</h3>
+
+    <ul class="gallery clearfix">
+    {% for image in record.movie_gallery %}
+        <li>
+            <a href="{{ image.path}}">
+                <img src="{{ image.thumb(80,80, {'mode':'crop'}) }}">
+            </a>
+        </li>  
+    {% endfor %}
+    </ul>
+
     <h3>Genres</h3>
 
     {% for genre in record.genres %}

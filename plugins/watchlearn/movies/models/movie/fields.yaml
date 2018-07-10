@@ -37,13 +37,28 @@ fields:
             extension: auto
         span: auto
         type: fileupload
+    year:
+        label: Year
+        span: auto
+        type: text
     genres:
         label: Genres
         span: auto
         nameFrom: genre_title
         descriptionFrom: description
         type: relation
-    year:
-        label: Year
-        span: left
-        type: text
+    actors:
+        label: Actors
+        prompt: 'Add new item'
+        span: auto
+        type: repeater
+        form:
+            fields:
+                actor_name:
+                    label: 'Actor Name'
+                    span: auto
+                    type: text
+                actor_age:
+                    label: 'Actor Age'
+                    span: auto
+                    type: text
