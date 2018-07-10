@@ -3,6 +3,9 @@
 /bin
 /node_modules
 
+# Acme rename Aacme
+/plugins/Aacme
+
 package-lock.json
 
 composer.phar
